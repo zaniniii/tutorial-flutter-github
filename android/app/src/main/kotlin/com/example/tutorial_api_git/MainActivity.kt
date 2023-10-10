@@ -1,4 +1,4 @@
-package com.example.ninelabs_repositories
+package com.example.tutorial_api_git
 
 import io.flutter.embedding.android.FlutterActivity
 

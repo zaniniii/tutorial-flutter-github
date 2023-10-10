@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:ninelabs_repositories/repositories_page.dart';
+import 'package:tutorial_api_git/home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Repositorios',
+      title: 'Tutorial API',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: const RepositoriesPage(),
+      home: const HomeView(),
     );
   }
 }

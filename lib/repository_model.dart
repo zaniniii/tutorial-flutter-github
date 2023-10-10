@@ -1,17 +1,18 @@
-class Repository {
-  String? name, user, avatar, description;
+class RepositoryModel {
+  String? name, user, description;
+  Map<String, dynamic>? owner;
 
-  Repository({
+  RepositoryModel({
     this.name,
-    this.user,
-    this.avatar,
+    this.owner,
     this.description,
+    this.user,
   });
 
-  Repository.fromJson(Map<String, dynamic> json) {
-    name = json['full_name'];
-    user = json['owner']['login'];
-    avatar = json['owner']['avatar_url'];
+  RepositoryModel.fromJson(Map<String, dynamic> json) {
+    name = json['name'];
+    user = json['user'];
+    owner = json['owner'];
     description = json['description'];
   }
 }

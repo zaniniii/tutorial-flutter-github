@@ -1,7 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ninelabs_repositories">
-   <application
-        android:label="ninelabs_repositories"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="tutorial_api_git"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
